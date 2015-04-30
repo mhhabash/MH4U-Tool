@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>damagecalculatordialog</class>
+ <widget class="QDialog" name="damagecalculatordialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QListWidget" name="weapon_type_list_widget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>131</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Bows</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ChargeBlades</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DualBlades</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GreatSwords</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hammers</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HeavyBowguns</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>InsectGlaives</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Lances</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>LightBowguns</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>LongSwords</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gunlances</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SwordnShields</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QListWidget" name="weapon_list_widget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>170</y>
+     <width>191</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="AuXBox">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>0</y>
+     <width>71</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>AuX</string>
+   </property>
+   <widget class="QRadioButton" name="AuSRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AuS</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AuMRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AuM</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AuLRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AuL</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AuXLRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AuXL</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AuXNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="criticalEyeBox">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>0</y>
+     <width>120</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Critical Eye</string>
+   </property>
+   <widget class="QRadioButton" name="criticalEye1RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Critical Eye+1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="criticalEye2RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Critical Eye+2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="criticalEye3RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Critical Eye+3</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="criticalGodRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Critical God</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="CENoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="gloveBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>0</y>
+     <width>151</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Glove</string>
+   </property>
+   <widget class="QRadioButton" name="latentPower1RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Latent Power+1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="latentPower2RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Latent Power+2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="challenger1RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Challenger+1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="challenger2RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Challenger+2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="gloveNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="peakPerformanceRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Peak Performance</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="otherBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>320</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Other</string>
+   </property>
+   <widget class="QCheckBox" name="sharpnessCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sharpness+1</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="weaknessExploitCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Weakness Exploit</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="powerCharmCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power Charm</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="criticalDrawCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Critical Draw</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="powerTalonCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power Talon</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="elementBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>0</y>
+     <width>131</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Element</string>
+   </property>
+   <widget class="QRadioButton" name="element1RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Element+1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="element2RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Element+2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="element3RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Element+3</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="elementAtkUpCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ElementAtkUp</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="elementNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="huntingHornBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>0</y>
+     <width>120</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Hunting Horn</string>
+   </property>
+   <widget class="QRadioButton" name="attackUpSRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attack Up (S)</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="attackUpLRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attack Up (L)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="replayCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Replay</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="HHNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="affinityUpCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affinity Up</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="elementUpCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Element Up</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="motionValueListWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>141</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weaponLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Weapon</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weaponTypeLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Weapon Type</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="motionValueLabel">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>150</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Motion Value</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="kitchenBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>150</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Kitchen</string>
+   </property>
+   <widget class="QRadioButton" name="AuSKitchenRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attack Up S</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AuLKitchenRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attack Up L</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="kitchenNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="seedPillBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>240</y>
+     <width>120</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Might Item</string>
+   </property>
+   <widget class="QRadioButton" name="mightSeedRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Might Seed</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="mightPillRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Might Pill</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="mightNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="fortifyBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>150</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Fortify</string>
+   </property>
+   <widget class="QRadioButton" name="faint1RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Faint x1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="faint2RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Faint x2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="fortifyNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="dangerBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>240</y>
+     <width>120</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Danger</string>
+   </property>
+   <widget class="QRadioButton" name="adrenaline2RadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Adrenaline+2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="heroicsRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Heroics</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="dangerNoneRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>117</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>160</y>
+     <width>96</width>
+     <height>167</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="caclulatePushButton">
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="totalDamageLabel">
+      <property name="text">
+       <string>Total Damage</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="totalDamageFloatLabel">
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="rawDamageLabel">
+      <property name="text">
+       <string>Raw Damage</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="rawDamageFloatLabel">
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="elementalDamageLabel">
+      <property name="text">
+       <string>Ele Damage</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="eleDamageFloatLabel">
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>weapon_type_list_widget</zorder>
+  <zorder>weapon_list_widget</zorder>
+  <zorder>AuXBox</zorder>
+  <zorder>criticalEyeBox</zorder>
+  <zorder>gloveBox</zorder>
+  <zorder>otherBox</zorder>
+  <zorder>elementBox</zorder>
+  <zorder>huntingHornBox</zorder>
+  <zorder>motionValueListWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>caclulatePushButton</zorder>
+  <zorder>weaponLabel</zorder>
+  <zorder>weaponTypeLabel</zorder>
+  <zorder>motionValueLabel</zorder>
+  <zorder>kitchenBox</zorder>
+  <zorder>seedPillBox</zorder>
+  <zorder>rawDamageFloatLabel</zorder>
+  <zorder>totalDamageFloatLabel</zorder>
+  <zorder>eleDamageFloatLabel</zorder>
+  <zorder>fortifyBox</zorder>
+  <zorder>dangerBox</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
