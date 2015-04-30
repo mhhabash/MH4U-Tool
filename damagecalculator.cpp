@@ -118,12 +118,12 @@ float calculate_affinity(std::map<std::string, float> modifiers)
     return result;
 }
 
-float calculate_raw_hitzone(bool weaknessExploit, float rawHitzone)
+float calculate_raw_hitzone(bool weakness_exploit, float raw_hitzone)
 {
     float result;
 
-    result = rawHitzone;
-    if (result > 0.45 && weaknessExploit)
+    result = raw_hitzone;
+    if (result > 0.45 && weakness_exploit)
         result += 0.05;
 
     return result;
